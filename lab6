@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>registration</title>
+  <link rel = "stylesheet" href="style_proj1.css">
+</head>
+<body>
+<div class="header">
+  <h1>Registration page lab6</h1>
+</div>
+<div
+        36class="main">
+  <form class="main2">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required="required">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="myfile">Select an image</label>
+    <input type="file" id="myfile" name="myfile">
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your Full Name" name="name" id="name" required="required">
+
+    <label for="birth"><b>Birth date</b></label>
+    <input type="date" placeholder="Enter your birth date" name="name" id="birth" required="required"/>
+
+    <label for="time"><b>Birth hour</b></label>
+    <input type="time" placeholder="Enter your birth time" name="name" id="time">
+
+    <div class="gender">
+      <label for="male"><b>Choose your gender</b></label>
+      <input type="radio" name="genderS" value="male" id="male">Male
+      <label for="female"></label>
+      <input type="radio" name="genderS" value="female" id="female">Female
+    </div>
+
+    <div class="color">
+      <label for="color"><b>Choose your favorite color</b></label>
+      <input type="color" placeholder="Choose your favorite color" name="name" id="color">
+    </div>
+
+    <label for="country">Where are you from?</label>
+    <select name="country" id="country">
+      <option value="">Select country of birth</option>
+      <option value="Australia">Australia</option>
+      <option value="South America">South America</option>
+      <option value="Africa">Africa</option>
+      <option value="Europe">Europe</option>
+      <option value="North America">North America</option>
+      <option value="Asia">Asia</option>
+    </select>
+
+    <label for="car"><b>Favorite car</b></label>
+    <input type="text" placeholder="Enter your favorite car" name="name" id="car" disabled>
+
+    <label for="submit" class="submit">Submit</label>
+    <input type="submit" placeholder="Submit" class="submit" id="submit" value="Submit">
+  </form>
+</div>
+
+
+<script src="script.js">
+  let sendBtn = document.getElementById('submit');
+
+  sendBtn.addEventListener('click', (e) => {
+    let email = document.getElementById('email');
+    let psw = document.getElementById('psw');
+    let img = document.getElementById('myfile');
+    let name = document.getElementById('name');
+    let birth = document.getElementById('birth');
+    let time = document.getElementById('time');
+    let gender = document.querySelector('input[name="genderS"]:checked').value;
+    let color = document.getElementById('color');
+    let country = document.getElementById('country');
+
+    email = email.value;
+    localStorage.setItem('email', email);
+
+    psw = psw.value;
+    localStorage.setItem('psw', psw);
+
+    img = img.value;
+    localStorage.setItem('img', img);
+
+    name = name.value;
+    localStorage.setItem('name', name);
+
+    birth = birth.value;
+    localStorage.setItem('birth', birth);
+
+    time = time.value;
+    localStorage.setItem('time', time);
+
+    localStorage.setItem('gender', gender);
+
+    color = color.value;
+    localStorage.setItem('color', color);
+
+    country = country.value;
+    localStorage.setItem('country', country);
+  });
+</script>
+<style>
+  .main{
+    background-color: blue;
+    color: blue;
+    width: 500px;
+    height: 70vh;
+    display: flex;
+    border-style: solid;
+    border-radius: 10%;
+    justify-content: center;
+
+
+  }
+  label{
+    margin-top: 10px;
+  }
+
+  .main2{
+    background-color: blue;
+    color: white;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  body{
+    background: #3aaf9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+  }
+</style>
+</body>
+</html>
