@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<style>
+    .red{
+        color: red;
+    }
+    .rgba-red{
+        color: rgba(255, 0, 0);
+        opacity: 50%;
+    }
+    .hex-red{
+        color: #FF0000;
+    }
+    .background-red{
+        background-color: red;
+        color: aliceblue;
+    }
+    .background-yellow{
+        background-color: yellow;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    .border{
+        margin: 10px 20px 10px 20px;
+        border-top: 1px dotted green;
+        border-bottom: 3px dotted red;
+    }
+    .little-rounded{
+        color: aliceblue;
+        background-color: red;
+        border: 3px solid black;
+        border-radius: 12px;
+        padding: 10px;
+    }
+    .fully-rounded{
+        background-color: yellow;
+        border-radius: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .circle{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #FF0000;
+        padding: 10px;
+        color: aliceblue;
+
+    } .inline{
+         text-decoration: underline;
+         color: greenyellow;
+          }
+     .inline-block{
+          margin: 5px;
+         width:50px;
+         height:50px;
+         border:1px solid #000;
+         background-color: red;
+
+     }
+
+</style>
+<body>
+     <div class = "red">My color is red (default red using class)</div>
+     <div style="color: red">My color is red (default red using class on div)</div>
+     <div class = "rgba-red"> My color is rgba red with opacity</div>
+     <div class = "hex-red">My color is hex red</div>
+     <div class = "background-red">My background color is red</div>
+     <div class = "background-yellow">I have padding same on each side</div>
+     <div class="border">I have margin 20px on rears and 10px on top and bottom</div>
+     <div class="little-rounded">I am a little rounded</div>
+     <div class="fully-rounded">I am fully rounded</div>
+     <div class = "circle">I am circle</div>
+     <div style="display: flex">
+     <div class="inline">I am a tag which is inline by default </div><div>  I am div which is inline</div>
+     </div>
+     <div style="display: inline-block; color: greenyellow ">I was a tag which was inline but now i am block</div>
+     <div style="padding: 10px; display: flex">
+          <div style="background-color: yellow; height: 15px;">I am an inline div near an inline block div </div>
+          <div class="inline-block" >inline block</div>
+     </div>
+<div>Text left(default)</div>
+     <div style="text-align: center;">Text center</div>
+<div style="text-align: right">Text right</div>
+</body>
+</html>
