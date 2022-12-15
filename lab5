@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+</head>
+<style>
+    *{
+        font-family: Inter;
+    }
+    body{
+        background: url(img_4.png);
+        background-size: cover;
+    }
+    .name{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 28px 0 0 51px;
+        color: white;
+    }
+    .k{
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        line-height: 44px;
+        text-align: center;
+        margin-top: 72px;
+    }
+    footer{
+        left: 0;
+        background-color: #212121;
+        width: 100%;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+    }
+    .link{
+        color: white;
+        text-decoration: none;
+    }
+    .link:hover{
+        background: rgba(0,0,0,0);
+        box-shadow: inset 0 0 0 1px white;
+    }
+    th, tr, td{
+
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .table{
+        position: absolute;
+        display: block;
+        margin-left: 260px;
+        margin-right: auto
+
+    }
+    td{
+        background-color: #d9d9d9;
+        text-align: center;
+    }
+    th{
+        background-color: #727272;
+    }
+    .fff{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 13px;
+    }
+    .www{
+        text-align: center;
+        height: 50px;
+        margin-top: 5px;
+        background-color: black;
+        font-size: 10px;
+    }
+</style>
+<body>
+<div class = "name">ABOUT US</div>
+<div class="schedule">
+    <div class = "k"> My schedule</div>
+    <table class = "table" >
+           <tr>
+               <th>Day/hour</th>
+               <th>Mon</th>
+               <th>Tue</th>
+               <th>Wed</th>
+               <th>Thu</th>
+               <th>Fri</th>
+           </tr>
+        <tr>
+            <td>09:00 - 09:50</td>
+            <td> </td>
+            <td> </td>
+            <td>MDE 133</td>
+            <td> </td>
+            <td>CSS 215</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:50</td>
+            <td> </td>
+            <td> </td>
+            <td>MDE 133</td>
+            <td> </td>
+            <td>INF 231</td>
+        </tr>
+        <tr>
+            <td>11:00 - 11:50</td>
+            <td>CSS 215</td>
+            <td>LUNCH</td>
+            <td>LUNCH</td>
+            <td>LUNCH</td>
+            <td>LUNCH</td>
+        </tr>
+        <tr>
+            <td>12:00 - 12:50</td>
+            <td>CSS 215</td>
+            <td> </td>
+            <td>MDE 259</td>
+            <td>MDE 191</td>
+            <td>CSS 152</td>
+        </tr>
+        <tr>
+            <td>13:00 - 13:50</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>MDE 191</td>
+            <td>MDE 125</td>
+        </tr>
+        <tr>
+            <td>14:00 - 14:50</td>
+            <td> </td>
+            <td> </td>
+            <td>INF 202</td>
+            <td>MDE 191</td>
+            <td>MDE 125</td>
+        </tr>
+        <tr>
+            <td>15:00 - 15:50</td>
+            <td>INF 202</td>
+            <td> </td>
+            <td>INF 202</td>
+            <td> </td>
+            <td>MDE 125</td>
+        </tr>
+        <tr>
+            <td>16:00 - 16:50</td>
+            <td> </td>
+            <td>CSS 152</td>
+            <td>INF 231</td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>17:00 - 17:50</td>
+            <td> </td>
+            <td>CSS 152</td>
+            <td>INF 231</td>
+            <td> </td>
+            <td>Think about the meaning of life</td>
+        </tr>
+    </table>
+</div>
+<footer>
+    <div class = "fff">
+        <div>About us</div>
+        <div>Contacts</div>
+    </div>
+    <div class = "www">2022 all rights “not” reserved</div>
+</footer>
+</body>
+</html>
