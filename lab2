@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<style>
+    body{
+        margin-bottom: 60px;
+        background: url(img_4.png);
+        background-size: cover;
+
+    }
+    .information{
+        margin: 60px 0 0 0;
+        background: rgba(150, 150, 150, 0.25);
+        box-sizing: border-box;
+        width: 870px;
+        height: 320px;
+        align-items: center;
+
+    }
+    .avatar{
+        display: flex;
+
+    }
+    .picture{
+        background: url(img_1.png);
+        background-size: cover;
+        margin: 6px 0 0 6px;
+        width: 120px ;
+        height: 140px;
+
+    }
+    .info{
+        margin: 26px 0 0 59px;
+
+    }
+    .name{
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #ffffff;
+    }
+    .spec{
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ffffff;
+    }
+    .textAbout{
+        margin: 24px 0 0 33px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: white;
+    }
+    .number{
+        display: flex;
+        margin: 24px 0 0 0;
+    }
+    .num{
+        margin: 0 0 0 7px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ffbbbb;
+    }
+    footer{
+        left: 0;
+        background-color: #212121;
+        width: 100%;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+    }
+    .link{
+        color: white;
+        text-decoration: none;
+    }
+    .link:hover{
+        background: rgba(0,0,0,0);
+        box-shadow: inset 0 0 0 1px white;
+    }
+    .www{
+        text-align: center;
+        height: 50px;
+        margin-top: 5px;
+        background-color: black;
+        font-size: 10px;
+    }
+    .ikon{
+        background-image: url(img_3.png);
+        box-shadow: 0px 0px 4px 5px #000000;
+        border-radius: 100px;
+        background-size: 30px;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+       right: 20px;
+
+
+    }
+</style>
+<body>
+<div class = "information">
+    <div class = "avatar">
+        <div class = "picture">
+
+        </div>
+        <div class="info">
+            <div class = "name">Daulet</div>
+            <div class = "spec">Student of information system</div>
+        </div>
+    </div>
+    <div class = "textAbout">
+        <div style="margin-bottom: 10px">I love music.</div>
+        <div></div>
+        <div class = "number">
+            <div class = "call">Call me : </div>
+            <div class = "num">8-702-215-40-04</div>
+        </div>
+    </div>
+</div>
+<div class = "ikon">
+
+</div>
+<footer>
+    <div style="display: flex; justify-content: space-around; margin-top: 13px">
+    <div>Home</div>
+    <div>Contacts</div>
+    </div>
+    <div class = "www">2022 all rights “not” reserved</div>
+</footer>
+</body>
+</html>
